@@ -1,0 +1,517 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef7ff;
+            color: #35566f;
+            line-height: 1.7;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 8%;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(100,160,200,0.15);
+        }
+
+        nav h2 {
+            color: #6b9fc1;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #50758d;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #82b9dc;
+        }
+
+        /* GENERAL */
+        section {
+            padding: 100px 10%;
+        }
+
+        /* HOME */
+        #home {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #e8f6ff, #d8efff);
+        }
+
+        .profile {
+            max-width: 700px;
+        }
+
+        .profile img {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 7px solid white;
+            box-shadow: 0 10px 30px rgba(80,140,180,0.2);
+            margin-bottom: 20px;
+        }
+
+        .profile h1 {
+            font-size: 45px;
+            color: #477b9c;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            font-size: 18px;
+            color: #66899f;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            border-radius: 30px;
+            background: #8fc5e5;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #6daed3;
+            transform: translateY(-3px);
+        }
+
+        /* TITLE */
+        .title {
+            text-align: center;
+            color: #477b9c;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+        .about {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(90,150,190,0.1);
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 22px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(90,150,190,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #639abd;
+            margin-bottom: 10px;
+        }
+
+        /* SKILLS */
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            margin-bottom: 5px;
+        }
+
+        .bar {
+            height: 12px;
+            background: #d9edf8;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: #91c7e4;
+            border-radius: 20px;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #d9effc;
+            color: #55788e;
+        }
+
+        /* MOBILE */
+        @media(max-width: 700px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                gap: 10px;
+                font-size: 12px;
+            }
+
+            .profile h1 {
+                font-size: 34px;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 80px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+    <h2>My Profile ♡</h2>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- HOME -->
+
+<section id="home">
+
+    <div class="profile">
+
+        <img src="foto.jpg" alt="Foto Profil">
+
+        <h1>Halo, I'm Your Name ✨</h1>
+
+        <p>
+            Welcome to my little space on the internet ♡
+        </p>
+
+        <p>
+            Student | Creative Learner | Future Success
+        </p>
+
+        <a href="#about" class="button">
+            Kenali Saya
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2 class="title">About Me ♡</h2>
+
+    <div class="about">
+
+        <div class="about-text">
+
+            <p>
+                Halo! Nama saya <b>Your Name</b>.
+                Saya adalah seorang pelajar yang memiliki semangat
+                untuk terus belajar, berkembang, dan mencoba hal-hal baru.
+            </p>
+
+            <br>
+
+            <p>
+                Saya tertarik pada teknologi, pendidikan, kreativitas,
+                dan berbagai kegiatan yang dapat membantu saya
+                mengembangkan kemampuan.
+            </p>
+
+            <br>
+
+            <p>
+                Saya percaya bahwa setiap proses kecil yang dilakukan
+                dengan konsisten dapat membawa kita lebih dekat
+                kepada impian.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <h2 class="title">My Education 🎓</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>SD</h3>
+            <p>Nama Sekolah</p>
+            <small>2015 - 2021</small>
+        </div>
+
+        <div class="card">
+            <h3>SMP</h3>
+            <p>Nama Sekolah</p>
+            <small>2021 - 2024</small>
+        </div>
+
+        <div class="card">
+            <h3>SMK</h3>
+            <p>Nama Sekolah</p>
+            <small>2024 - Sekarang</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <h2 class="title">My Skills 💻</h2>
+
+    <div class="card">
+
+        <div class="skill">
+
+            <div class="skill-name">
+                HTML & CSS
+            </div>
+
+            <div class="bar">
+                <div class="progress" style="width:85%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-name">
+                Microsoft Office
+            </div>
+
+            <div class="bar">
+                <div class="progress" style="width:90%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-name">
+                Communication
+            </div>
+
+            <div class="bar">
+                <div class="progress" style="width:80%"></div>
+            </div>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-name">
+                Creativity
+            </div>
+
+            <div class="bar">
+                <div class="progress" style="width:88%"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section>
+
+    <h2 class="title">Experience & Achievement 🏆</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Organization</h3>
+            <p>
+                Aktif mengikuti kegiatan organisasi
+                dan kegiatan sekolah.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Competition</h3>
+            <p>
+                Mengikuti berbagai kompetisi
+                untuk mengembangkan kemampuan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Project</h3>
+            <p>
+                Membuat berbagai project kreatif
+                dan pembelajaran.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOBBY -->
+
+<section>
+
+    <h2 class="title">My Hobbies 🌷</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📚 Reading</h3>
+            <p>Membaca buku dan mencari informasi baru.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎧 Music</h3>
+            <p>Mendengarkan musik di waktu luang.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 Technology</h3>
+            <p>Belajar teknologi dan membuat project.</p>
+        </div>
+
+        <div class="card">
+            <h3>📸 Photography</h3>
+            <p>Mengabadikan momen yang menarik.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2 class="title">Let's Connect 💌</h2>
+
+    <div class="contact">
+
+        <p>📧 Email: yourname@gmail.com</p>
+
+        <p>📱 Instagram: @username</p>
+
+        <p>💻 GitHub: github.com/username</p>
+
+        <a href="mailto:yourname@gmail.com" class="button">
+            Contact Me
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        Made with ♡ by Your Name
+    </p>
+
+    <p>
+        © 2026 My Personal Website
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
